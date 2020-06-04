@@ -14,7 +14,7 @@ CREATE TABLE users (
 GO
 
 CREATE PROCEDURE upsert_user
-	@id INT,
+	@id INT=0,
 	@first_name VARCHAR(50),
 	@last_name VARCHAR(50),
 	@email VARCHAR(255),
